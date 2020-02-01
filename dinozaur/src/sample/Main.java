@@ -7,30 +7,35 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.DataOutputStream;
 import java.io.File;
+import java.net.Socket;
+import java.util.Scanner;
 
 public class Main extends Application {
 
-    public static Stage primaryStage;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root;
         File file = new File("src/regF.txt");
         if (file.exists()) {
-            root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-            this.primaryStage = primaryStage;
-            this.primaryStage.setTitle("Dino custom");
-            Scene scene = new Scene(root, 727, 511);
-            this.primaryStage.setScene(scene);
-        }else{
-            root = FXMLLoader.load(getClass().getResource("Username.fxml"));
-            this.primaryStage = primaryStage;
-            this.primaryStage.setTitle("Dino custom");
-            Scene scene = new Scene(root, 600, 400);
-            this.primaryStage.setScene(scene);
-        }
+            try {
 
+
+                root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+                primaryStage.setTitle("Dino custom");
+                Scene scene = new Scene(root, 727, 511);
+                primaryStage.setScene(scene);
+            } catch (Exception e) {
+
+            }
+        } else {
+            root = FXMLLoader.load(getClass().getResource("Username.fxml"));
+            primaryStage.setTitle("Dino custom");
+            Scene scene = new Scene(root, 600, 400);
+            primaryStage.setScene(scene);
+        }
 
 
         primaryStage.show();

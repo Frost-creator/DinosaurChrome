@@ -1,0 +1,7 @@
+Scanner scanner = new Scanner(file);
+                DataOutputStream dataOutputStream = new DataOutputStream(new Socket("localhost", 9900).getOutputStream());
+                String line = "";
+                while (scanner.hasNext()) {
+                    line = line + scanner.next();
+                }
+                dataOutputStream.writeUTF(line);
