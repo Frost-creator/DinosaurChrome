@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="sample.Username"  prefHeight="400.0" prefWidth="600"  xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="164.0" layoutY="103.0" prefHeight="25.0" prefWidth="273.0" text="One time registration (Requires net work)" textAlignment="CENTER" />
+      <Button fx:id="submit" layoutX="274.0" layoutY="252.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="username" layoutX="226.0" layoutY="187.0" />
+      <Label alignment="CENTER" layoutX="195.0" layoutY="146.0" prefHeight="25.0" prefWidth="209.0" text=" Enter your Nick name" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

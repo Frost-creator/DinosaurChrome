@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:controller="sample.Controller" prefHeight="511.0" prefWidth="727.0" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+      <ImageView fx:id="ground" fitHeight="176.0" fitWidth="727.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dino" fitHeight="108.0" fitWidth="72.0" layoutX="136.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cactus" fitHeight="90.0" fitWidth="60.0" layoutX="636.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn" layoutX="0.0" layoutY="0.0" prefHeight="511.0" prefWidth="727.0"/>
+   </children>
+</AnchorPane>
